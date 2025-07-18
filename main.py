@@ -66,7 +66,3 @@ def predict():
         return str(e)
 
     return render_template('index.html', prediction=classification)
-
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))  # Get port from environment variable
-    app.run(host="0.0.0.0", port=port)
